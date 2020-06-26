@@ -128,6 +128,9 @@ def pause():
 ''' save and load the high score '''
 def HighScore():
     global score, high_score
+    if not os.path.exists(os.path.join(os.path.dirname(__file__),'db')):
+        print("made db")
+        os.mkdir('db')
     name = os.path.join('db','high_score.txt')
     try:
         file = open(name,"r")
