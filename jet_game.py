@@ -3,7 +3,6 @@ from pygame.locals import *
 pygame.mixer.init()
 pygame.init()
 
-''' Initialization of variables '''
 # setting up colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -62,7 +61,7 @@ class Explosion(pygame.sprite.Sprite):
 #collision_sound = pygame.mixer.Sound(os.path.join('music','sound.ogg'))
 #game_over_sound = pygame.mixer.Sound(os.path.join('music','sound.ogg'))
 
-""" Functions """
+
 ''' gui text printer function'''
 def Print(text,my_font,size,pos,color,surface):
     if my_font == "None":
