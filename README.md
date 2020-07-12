@@ -4,11 +4,11 @@ Simple game where a user dodges missiles.
 ## Running
 Ensure you have python installed, preferably python 3<br>
 Ensure you have pygame module installed,<br>
-To install:
-  * pip install pygame<br>
+To install:<br>
+  `pip install pygame`<br>
 
-To run jet_game.py:
-  * python jet_game.py
+To run jet_game.py:<br>
+  `python jet_game.py`
 
 ## Game play Instructions
 Use Desktop arrow keys to control the movement of the jet.<br>
