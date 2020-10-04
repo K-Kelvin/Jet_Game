@@ -16,6 +16,6 @@ Press **r** to reset and **p** to pause.<br>
 Press **right shift** to change background while playing.<br>
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/K-Kelvin/Jet_Game/.screenshots/image1.PNG"></img>
-<img src="https://raw.githubusercontent.com/K-Kelvin/Jet_Game/.screenshots/image2.PNG"></img>
-<img src="https://raw.githubusercontent.com/K-Kelvin/Jet_Game/.screenshots/image3.PNG"></img>
+![screenshot 1](/.screenshots/image1.PNG)
+![screenshot 2](/.screenshots/image2.PNG)
+![screenshot 3](/.screenshots/image3.PNG)
