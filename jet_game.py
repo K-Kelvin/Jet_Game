@@ -3,7 +3,6 @@ from pygame.locals import *
 pygame.mixer.init()
 pygame.init()
 
-''' Initialization of variables '''
 # setting up colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -56,13 +55,13 @@ class Explosion(pygame.sprite.Sprite):
                 self.surf = self.anim_list[self.frame]
                 self.rect = self.surf.get_rect(center=self.rect.center)
 
-    ### initializing sounds
+    ### initializing sounds : TO-DO
 #up_sound = pygame.mixer.Sound(os.path.join('music','sound.ogg'))
 #down_sound = pygame.mixer.Sound(os.path.join('music','sound.ogg'))
 #collision_sound = pygame.mixer.Sound(os.path.join('music','sound.ogg'))
 #game_over_sound = pygame.mixer.Sound(os.path.join('music','sound.ogg'))
 
-""" Functions """
+
 ''' gui text printer function'''
 def Print(text,my_font,size,pos,color,surface):
     if my_font == "None":
@@ -331,7 +330,7 @@ def main():
 score = 0
 over = False
 list = {1:"Start",2:"About",3:"High Score",4:"Quit"} ; selected = list[1]
-HighScore()
+HighScore() # initialize the high_score
 def start_menu():
     global over, list, selected, flag,SCREEN,screen,screen_width,screen_height,swc,shc
     start_menu = True
@@ -400,7 +399,7 @@ def start_menu():
             Reset()
         Print("Author : N_ivlek",None,30,(swc+300,shc+250),BLACK,SCREEN)
         pygame.display.update()
-        clock.tick(40)
+        clock.tick(40) # 40 frames per second
 
 if __name__ == '__main__':
     try:
