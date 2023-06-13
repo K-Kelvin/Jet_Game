@@ -86,13 +86,13 @@ def intro():
                 swc, shc = screen.center
         SCREEN.fill(SKYBLUE)
         txt1 = '''Special credit to the providers of the free images, at www.kenney.nl'''
-        txt2 = '''This game was developed by N_ivlek, an upcoming programmer'''
+        txt2 = '''This game was developed by Kijanda, an upcoming programmer'''
         surf = pygame.Surface((swc + 300, shc))
         surf.fill(GRAY)
         rect = surf.get_rect(center=(swc, shc))
         SCREEN.blit(surf, rect)
         Print("Jet Game", "font/font_menu.ttf", 75, (swc, shc - 50), RED, SCREEN)
-        Print("Author: N_ivlek", None, 50, (swc, shc + 20), WHITE, SCREEN)
+        Print("Author: Kijanda", None, 50, (swc, shc + 20), WHITE, SCREEN)
         Print(txt1, None, 30, (swc, shc + 60), WHITE, SCREEN)
         Print(txt2, None, 30, (swc, shc + 90), WHITE, SCREEN)
         Print("Press any key to go back...", None, 30, (swc, screen_height - 50), RED, SCREEN)
@@ -157,6 +157,7 @@ def Reset():
 
 ''' the main loop for playing the game'''
 def main():
+    enemy_speed = 1
     ''' creating the player attributes/properties '''
     class Player(pygame.sprite.Sprite):
         def __init__(self):
@@ -234,6 +235,8 @@ def main():
     pygame.time.set_timer(ADDCLOUD, 1000)
     ADDSCORE = pygame.USEREVENT + 3
     pygame.time.set_timer(ADDSCORE, 100)
+    INCREMENT_SPEED = pygame.USEREVENT + 4
+    pygame.time.set_timer(INCREMENT_SPEED, 5000)
 
     ''' Function to initialize and update the score to the screen '''
     def SCORE():
@@ -283,7 +286,11 @@ def main():
                     music('stop')
             elif event.type == ADDENEMY:
                 new_enemy = Enemy()
+                new_enemy.speed += enemy_speed
                 enemies.add(new_enemy)
+            elif event.type == INCREMENT_SPEED:
+                if player in the_player:
+                    enemy_speed += 1
             elif event.type == ADDCLOUD:
                 new_cloud = Cloud()
                 clouds.add(new_cloud)
@@ -397,7 +404,7 @@ def start_menu():
 
         if keys[K_r]:
             Reset()
-        Print("Author : N_ivlek",None,30,(swc+300,shc+250),BLACK,SCREEN)
+        Print("Author : Kijanda",None,30,(swc+300,shc+250),BLACK,SCREEN)
         pygame.display.update()
         clock.tick(40) # 40 frames per second
 
