@@ -7,3 +7,5 @@ BLUE = (0, 0, 255)
 GRAY = (127, 127, 127)
 MAGENTA = (200, 0 ,200)
 SKYBLUE = (135, 206, 250)
+
+AUTHOR = '@K-Kelvin'
