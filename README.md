@@ -20,7 +20,7 @@ Press **right shift** to change background while playing.<br>
 
 ## Screenshots
 
-![screenshot 1](/.screenshots/image1.png)
-![screenshot 2](/.screenshots/image2.png)
-![screenshot 3](/.screenshots/image3.png)
-![screenshot 4](/.screenshots/image4.png)
+![screenshot 1](/.screenshots/image-1.png)
+![screenshot 2](/.screenshots/image-2.png)
+![screenshot 3](/.screenshots/image-3.png)
+![screenshot 4](/.screenshots/image-4.png)
