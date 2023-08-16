@@ -1,22 +1,38 @@
 # Jet_Game
 
-Simple game where a user dodges missiles.
+Simple game where a user controls a jet to dodges missiles.
+Made using python's pygame module.
 
-## Running
+## Setup and Running
+
+Clone the project and navigate to the project directory:
+
+```
+git clone https://github.com/K-Kelvin/Jet_Game.git
+
+cd Jet_Game
+```
 
 Ensure you have python installed, preferably python 3<br>
-Ensure you have pygame module installed, to install:<br>
-`pip install pygame`<br>
 
-To run jet_game.py:<br>
+Install project dependencies:<br>
+`pip install -r requirements.txt`<br>
+
+To run the game:<br>
 `python jet_game.py`
 
 ## Game play Instructions
 
-Use Desktop **arrow keys** to control the movement of the jet.<br>
-While playing, press **n** to play music, **m** to stop music.<br>
-Press **r** to reset and **p** to pause.<br>
-Press **right shift** to change background while playing.<br>
+| Key                     | Action                                         |
+| ----------------------- | ---------------------------------------------- |
+| `UP, DOWN, LEFT, RIGHT` | Move the jet on the screen                     |
+| `n`                     | Play music                                     |
+| `m`                     | Stop music                                     |
+| `r`                     | Reset the game                                 |
+| `p`                     | Pause the game / Resume the game               |
+| `right shift`           | Change the background to a random color        |
+| `left shift`            | Set the background color to default (sky blue) |
+| `ESC`                   | Stop the game and go back to the start screen  |
 
 ## Screenshots
 
